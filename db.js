@@ -13,16 +13,16 @@ const db = new Database(process.env.REPLIT_DB_URL);
 
 
 
-// db.getAll().then(console.log);
+db.getAll().then(console.log);
 
-const keyExists = async (key) => {
-  const exists = await db.list().then(keys => keys.includes(key));
-   console.log(exists);
-}
+// const keyExists = async (key) => {
+//   const exists = await db.list().then(keys => keys.includes(key));
+//    console.log(exists);
+// }
 
-let match = db.get('match');
-match = JSON.parse(match);
-console.log(match);
+// let match = db.get('match');
+// console.log(match);
+// console.log(db.get('match'));
 
 
 
